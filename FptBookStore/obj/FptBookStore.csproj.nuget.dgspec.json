@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bao Lam\\Desktop\\FptBookStore\\FptBookStore\\FptBookStore.csproj": {}
+    "C:\\Users\\Tien\\source\\repos\\FptBookShop\\FptBookStore\\FptBookStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bao Lam\\Desktop\\FptBookStore\\FptBookStore\\FptBookStore.csproj": {
+    "C:\\Users\\Tien\\source\\repos\\FptBookShop\\FptBookStore\\FptBookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bao Lam\\Desktop\\FptBookStore\\FptBookStore\\FptBookStore.csproj",
+        "projectUniqueName": "C:\\Users\\Tien\\source\\repos\\FptBookShop\\FptBookStore\\FptBookStore.csproj",
         "projectName": "FptBookStore",
-        "projectPath": "C:\\Users\\Bao Lam\\Desktop\\FptBookStore\\FptBookStore\\FptBookStore.csproj",
-        "packagesPath": "C:\\Users\\Bao Lam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bao Lam\\Desktop\\FptBookStore\\FptBookStore\\obj\\",
+        "projectPath": "C:\\Users\\Tien\\source\\repos\\FptBookShop\\FptBookStore\\FptBookStore.csproj",
+        "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tien\\source\\repos\\FptBookShop\\FptBookStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bao Lam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
