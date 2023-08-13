@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<FptBookStoreContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FptBookStoreContext") ?? throw new InvalidOperationException("Connection string 'FptBookStoreContext' not found.")));
 
-builder.Services.AddDefaultIdentity<DefaultUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<DefaultUser>(options => options.SignIn.RequireConfirmedAccount = true).AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<FptBookStoreContext>();
 
 builder.Services.AddRazorPages();
