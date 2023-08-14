@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using FptBookStore.Data;
 using FptBookStore.Models;
 using Microsoft.AspNetCore.Identity;
+using BookStore.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<FptBookStoreContext>(options =>
@@ -15,7 +16,11 @@ builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<Cart>(sp => Cart.GetCart(sp));
 
-builder.Services.AddHostedService<SeedData>();
+
+
+
+
+//builder.Services.AddHostedService<SeedData>();
 builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddSession(options =>
@@ -29,6 +34,12 @@ builder.Services.AddSession(options =>
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+// Initialize user roles asynchronously
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await UserRoleInitializer.InitializeAsync(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
