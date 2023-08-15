@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FptBookStore.Data;
 using FptBookStore.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FptBookStore.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class BooksController : Controller
     {
         private readonly FptBookStoreContext _context;
@@ -18,7 +20,7 @@ namespace FptBookStore.Controllers
         {
             _context = context;
         }
-
+        [AllowAnonymous]
         // GET: Books
         public async Task<IActionResult> Index()
         {

@@ -21,6 +21,8 @@ builder.Services.AddScoped<Cart>(sp => Cart.GetCart(sp));
 
 
 //builder.Services.AddHostedService<SeedData>();
+
+builder.Services.AddHostedService<SeedData>();
 builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddSession(options =>

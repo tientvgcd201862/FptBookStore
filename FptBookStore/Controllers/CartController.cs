@@ -1,9 +1,11 @@
 ﻿using FptBookStore.Data;
 using FptBookStore.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FptBookStore.Controllers
 {
+    [Authorize]
     public class CartController : Controller
     {
         private readonly FptBookStoreContext _context;

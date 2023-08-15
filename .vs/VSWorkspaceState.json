@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FptBookStore",
-    "\\FptBookStore\\Migrations"
+    "\\FptBookStore"
   ],
-  "SelectedNode": "\\FptBookStore\\FptBookStore.csproj",
+  "SelectedNode": "\\FptBookStore.sln",
   "PreviewInSolutionExplorer": false
 }
